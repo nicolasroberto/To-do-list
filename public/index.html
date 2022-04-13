@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
+    <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#212121">
+    <meta name="msapplication-TileColor" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <meta name="description" content="App lista" />
+    <meta
+      name="keyboards"
+      content="Lista, Listado, Memoria, Comprar, Memolist"
+    />
+    <meta name="author" content="Nicolás Roberto" />
+    <meta name="robots" content="index follow" />
+
+    <!-- facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Memolist" />
+    <meta property="og:description" content="App para anotar compras del día" />
+    <meta property="og:image" content="img/icon.svg" />
+    <meta property="og:url" content="https://www.linkedin.com/in/nicol%C3%A1s-roberto/" />
+    <meta property="”og:site_name”" content="”Memolist”" />
+    <!-- Twitter -->
+    <meta property="Twitter:title" content="Memolist" />
+    <meta
+      property="Twitter:description"
+      content="App para anotar compras del día"
+    />
+    <meta property="Twitter:type" content="Memolist" />
+    <meta property="Twitter:image" content="img/icon.svg" />
+    <meta property="Twitter:url" content="https://www.linkedin.com/in/nicol%C3%A1s-roberto/" />
+    <meta name="twitter:creator" content="@nikomotion" />
+
+    <title>MemoList</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><h1><i class="fa-solid fa-list-check"></i></i> MemoList</h1></a>
+        
+      </nav>
+    </header>
+  <section id="pagPrincipal">
+      <div class="main-txt">
+        <h1>¿No te acordás qué comprar?</h1>
+        <i class="fa-regular fa-face-frown"></i>
+      </div>
+    </section>
+
+    <div class="pop-up">
+      <button id="mostrarForm" class="fab">
+        <i class="fa-solid fa-circle-plus"></i>
+      </button>
+    </div>
+
+    <section id="pagSeleccion" class="encuadre">
+      <div class="pop-up1">
+        <div class="completar">
+        <!-- <form action=""> -->
+          <p id="advertencia"></p>
+          <input
+            id="miProducto"
+            type="text"
+            placeholder=" Producto:"
+            class="campo"
+            required
+          />
+          
+          <select class="campo" id="miCategoria" required>
+            <!-- <option disabled selected>Categoría</option> -->
+            <option value="/img/lemon.svg">Verdulería</option>
+            <option value="/img/drumstick.svg">Carnicería</option>
+            <option value="/img/bacon.svg">Fiambrería</option>
+            <option value="/img/bread.svg">Panadería</option>
+            <option value="/img/cheese.svg">Lácteos</option>
+            <option value="/img/drink.svg">Bebidas</option>
+            <option value="/img/cleaning.svg">Limpieza</option>
+            <option value="/img/soap.svg">Perfumería</option>
+          </select>
+
+          <textarea
+          id="miDescripcion"
+            class="campo"
+            cols="30"
+            rows="10"
+            placeholder=" Descipción: (opcional)"
+          ></textarea>
+
+
+          <button id="btnAgregar" class="btn-agregar btn-color" type="button">Agregar</button>
+        <!-- </form> -->
+      </div>
+      </div>
+    </section>
+
+    <section id="pagListas" class="encuadreLista">
+      <ul id="contenidoLista" class="elemento">
+      </ul>
+    </section>
+
+    <section id="detalles">
+      <div id="tarjeta">
+      </div>
+    </section>
+    
+    <script src="/app.js"></script>
+  </body>
+</html>
